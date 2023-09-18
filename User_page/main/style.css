@@ -36,3 +36,32 @@
     background-color: #b2ccff;
     overflow-x: hidden;
 }
+
+.header_title{
+    position:relative;
+    text-align: center;
+    z-index:1;
+    pointer-events: auto;   /* 글씨와 이미지가 겹쳤을 때 마우스로 글씨를 만지기 위해 설정*/
+}
+
+
+.header_title .colover, .cloud-1, .cloud-2, .cloud-3{
+    position:absolute;
+    pointer-events: none;   /* 마우스 이벤트 무시 (구름을 만질 수 없음) */
+}
+.header_title .colover{
+    top:-44px;
+    left:27px;
+}
+.header_title .cloud-1{
+    right:-44px;
+    top:70px;
+}
+.header_title .cloud-2{
+    top:303px;
+    left:-47px;
+}
+.header_title .cloud-3{
+    top:477px;
+    right:-34px;
+}
