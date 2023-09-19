@@ -32,15 +32,9 @@
     margin-right: auto;
     min-height: 100vh;
     padding-top: 100px;
-    z-index: 0;
+    z-index: -1;
     background-color: #b2ccff;
     overflow-x: hidden;
-
-    /* 배경 이미지, 클로버 필요 없으면 첫 번째의 url과 position 값 지워주면 됨 */ 
-    background-size: auto;
-    background-image:url('../../img/new_colover.png'), url('../../img/new_cloud.png'), url('../../img/new_cloud.png'), url('../../img/new_cloud.png');
-    background-position: 27px 56px, 270px 170px, -47px 403px, 250PX 557px;
-    background-repeat: no-repeat;
 }
 
 /* header section */
@@ -67,4 +61,59 @@
     font-size:15px;
     color:#5876B0;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+}
+/* background img */
+.background_img {
+    position: relative;
+    margin-top: -100px;
+}
+.clover{
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 30px;
+}
+.cloud1 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    right: -25px;
+    
+}
+.cloud2 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    left: -25px;
+    top: 150px;
+}
+.cloud3 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    right: -25px;
+    top: 350px;
+}
+
+
+
+
+/* footer section */
+.footer-section {
+    margin-top: 400px;
+}
+.footer-section p{
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    color: rgba(97, 97, 97, 0.5);
+}
+.footer-section svg {
+    z-index: 10;
+    color: rgba(97,97, 97, 0.5);
+    margin: 3px 2px;
 }
