@@ -35,4 +35,36 @@
     z-index: 0;
     background-color: #b2ccff;
     overflow-x: hidden;
+
+    /* 배경 이미지, 클로버 필요 없으면 첫 번째의 url과 position 값 지워주면 됨 */ 
+    background-size: auto;
+    background-image:url('../../img/new_colover.png'), url('../../img/new_cloud.png'), url('../../img/new_cloud.png'), url('../../img/new_cloud.png');
+    background-position: 27px 56px, 270px 170px, -47px 403px, 250PX 557px;
+    background-repeat: no-repeat;
+}
+
+/* header section */
+.header_title{
+    position:relative;
+    text-align: center;
+    z-index:1;
+    margin-top:21px;
+
+}
+.header_name{
+    font-size:50px;
+    color:#ffffff;
+    -webkit-text-stroke: 1px #000000;
+    margin-bottom:0px;
+}
+.header_sub{
+    font-size:50px;
+    color:#91AEE6;
+    -webkit-text-stroke: 1px #000000;
+    margin-top:-10px;
+}
+.header_add{
+    font-size:15px;
+    color:#5876B0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
 }
