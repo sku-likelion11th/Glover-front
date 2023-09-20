@@ -68,3 +68,81 @@
     color:#5876B0;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
 }
+
+/* durumari section */
+.durumari{
+    display:block;
+    margin:auto;
+    margin-top:30px;
+    box-shadow: 0px 20px 70px #ffffffc9;    /* 두루마리 뒤 반짝이 인데, 애매해 보임*/
+}
+.explan{
+    position:relative;
+    top:-150px;
+    text-align: center;
+}
+
+/* login section  */
+.login{
+    margin-top:-90px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+select{
+    width:180px;
+    height:52px;
+    border-color:#91AEE6;
+    border-radius: 30px;
+    text-align: center;
+    font-size:20px;
+    color:#758DBB;
+    font-weight:bold;
+    box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
+}
+select option{
+    font-size:20px;
+    color:#758DBB;
+    font-weight:bold;
+}
+.id{
+    margin-top:26px;
+    width:180px;
+    height:52px;
+    border:1px solid #91AEE6;
+    border-radius: 30px;
+    background-color: white;
+    text-align:center;
+    box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
+}
+.id p{
+    font-size:20px;
+    color:#758DBB;
+    font-weight: bold;
+}
+.id input{
+    position: relative;
+    bottom:23px;
+    width:130px;
+    height:23px;
+    background: none;
+    border:none;
+    text-align: center;
+    outline:none; /* input 눌렀을 때 테두리 제거 */
+    border-bottom: 2px solid #758DBB;
+}
+.id input[type="text"]{     
+    font-size:12px;
+}
+.submit{
+    margin-top:28px;
+    background-color: white;
+    border:1px solid #91AEE6;
+    border-radius: 30px;
+    width:109px;
+    height:29px;
+    color:#758DBB;
+    font-size:13px;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
+}
