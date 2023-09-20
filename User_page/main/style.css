@@ -74,12 +74,13 @@
     display:block;
     margin:auto;
     margin-top:30px;
-    box-shadow: 0px 20px 70px #ffffffc9;    /* 두루마리 뒤 반짝이 인데, 애매해 보임*/
 }
 .explan{
     position:relative;
     top:-150px;
     text-align: center;
+    text-shadow: 0px 100px 70px #ffffffc9;    /* 두루마리 뒤 반짝이*/
+
 }
 
 /* login section  */
@@ -123,13 +124,14 @@ select option{
 .id input{
     position: relative;
     bottom:23px;
-    width:130px;
+    width:140px;
     height:23px;
     background: none;
     border:none;
     text-align: center;
     outline:none; /* input 눌렀을 때 테두리 제거 */
     border-bottom: 2px solid #758DBB;
+    font-size:12px;
 }
 .id input[type="text"]{     
     font-size:12px;
@@ -145,4 +147,109 @@ select option{
     font-size:13px;
     font-weight: bold;
     box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
+}
+
+/* modal section */
+.modal {
+    display: none; 
+
+}
+
+/* 모달 콘텐츠 스타일 */
+.modal-content {
+    width: 339px !important;
+    height: 744px; /* 모달 창의 높이 설정 */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    border-radius: 43px !important;
+    border:2px solid #5876B0;
+}
+.agree_header{
+    text-align: center;
+    border-top-left-radius: 43px;
+    border-top-right-radius: 43px;
+    background-color:#BBDAFF;
+    width:100%;
+    font-size:18px;
+    color:#2A4884;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom:5px;
+    border:2px solid #5876B0;
+}
+.agree_content{
+    padding-left:34px;
+    padding-right:34px;
+}
+.black{
+    padding-top:11px;
+    font-size:15px;
+    margin-bottom:7px;
+}
+.blue{
+    color:#2A4884;
+    font-size:15px;
+    font-weight:bold;
+}
+.list{
+    text-align: center;
+    border:2px solid #758DBB;
+    border-radius: 25px;
+    margin-bottom:15px;
+}
+.list .name{
+    border-bottom: 2px solid #758DBB;
+    background-color:#DCECFF;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size:16px;
+    font-weight: bold;
+    color:#2A4884;
+    margin-bottom:5px;
+}
+.list p{
+    margin-bottom:5px;
+    font-size:15px;
+}
+.red{
+    font-size:15px;
+    color:#C55D5D;
+}
+.remind{
+    text-align: center;
+    font-size:16px;
+    color:#2A4884;
+    font-weight:bold;
+}
+
+/* 모달 버튼 스타일 */
+.agree button{
+    width:82px;
+    height: 34px;
+    border:1px solid #91AEE6;
+    border-radius: 5px;
+    background-color: #91AEE6;
+    color:#ffffff;
+    margin-right:15px;
+}
+.close button{
+    width:82px;
+    height:34px;
+    border:2px solid #91AEE6;
+    border-radius: 5px;
+    background-color:#ffffff;
+    color:#91AEE6;
+}
+.modal_footer{
+    margin-top:10px;
+    font-size:15px;
+    color:#758DBB;
+}
+
+/* second modal */
+.second_modal{
+    display:none;
+    backdrop-filter: blur(10px);
 }

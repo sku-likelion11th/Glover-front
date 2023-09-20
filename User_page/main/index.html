@@ -30,8 +30,9 @@
                 선 물 을 증 정 하 는 날
             </div>
         </div>
+
         <!-- login section -->
-        <form class="login">
+        <form class="login" id="login" method="post">
             <select>
                 <option value="0" disabled selected>학과 </option>
                 <option value="1">관광개발학과</option>
@@ -41,10 +42,72 @@
             </select>
             <div class="id">
                 <p>학번</p>
-                <input type="text" id="student_id" placeholder="학번을 입력해주세요">
+                <input type="id" id="student_id" placeholder="학번을 입력해주세요">
             </div>
             <input class="submit" type="submit" value="조회">
         </form>
+
+        <!-- first modal section  -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="agree_header">
+                    글:Lover 사용을 위한<br>
+                    개인정보 수집 • 이용 및 제공 동의서
+                </div>
+                <div class="agree_content">
+                    <p class="black">
+                        글로벌경영기술대학 학생회는 단과대학 소속
+                        학우에게 아래와 같이 개인정보 <br>
+                        수집•이용 및 제3자 제공하고자 합니다.
+                    </p>
+                    <p class="blue">
+                        내용을 자세히 읽으신 후, <br>
+                        동의 여부를 결정하여 주십시오.
+                    </p>
+                    <div class="list">
+                        <p class="name">수집•이용 항목</p>
+                        <p>이름, 학번, 학과, 행사참여 명단</p>
+                    </div>
+
+                    <div class="list">
+                        <p class="name">수집•이용 목적</p>
+                        <p>행사 참여에 따른 대상자 
+                            <br>관리 및 상품 증정
+                        </p>
+                    </div>
+
+                    <div class="list">
+                        <p class="name">보유 기간</p>
+                        <p>수집•이용 동의일로부터 개인정보
+                            <br>수집•이용 목적을 달성할 때까지
+                        </p>
+                    </div>
+                    
+                    <p class="red">
+                        ※ 위의 개인정보 수집•이용에 대한 동의를
+                        거부할 권리가 있습니다. 그러나 동의를 거부할 
+                        경우 글:LOVER♧ 사용에 제한되어 이용하실 수
+                        없습니다.
+                    </p>
+
+                    <p class="remind"><i class="fa-regular fa-hand-point-right" style="color: #2a4884;"></i> 위와 같이 개인정보를<br> 수집이용하는데 동의하십니까?</p>
+
+                </div>
+
+                <div class="button">
+                    <span class="agree"><button>동의</button></span>
+                    <span class="close"><button>취소</button></span>
+                </div>
+                <p class="modal_footer">글로벌경영기술대학 학생회</p>
+            </div>
+        </div>
+        <!-- second modal section -->
+        <div class="second_modal">
+            <div class="second_modal_content">
+                두 번째 모달 내용
+            </div>
+        </div>
+
         <!-- footer section -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
