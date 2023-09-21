@@ -201,89 +201,157 @@
 .background_img {
     position: relative;
 }
-/* .clover{
-    position: absolute;
-    margin-top: -130px;
-    margin-left: 20px;
-} */
+/* 구름 애니메이션 넣기 */
+@-webkit-keyframes cloud-ani {
+    0% {
+        -webkit-transform: translateX(100px) translateY(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-500px) translateY(0px);
+    }
+}
+@-webkit-keyframes cloud-ani2 {
+    100% {
+        -webkit-transform: translateX(-100px) translateY(0px);
+    }
+
+    0% {
+        -webkit-transform: translateX(700px) translateY(0px);
+    }
+}
 .cloud1 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     right: -25px;
     margin-top: -50px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud2 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     left: -25px;
     top: 100px;
+    -webkit-animation-name: cloud-ani2;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud3 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     right: -25px;
     top: 280px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud4 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     left: -25px;
     top: 500px;
+    -webkit-animation-name: cloud-ani2;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud5 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     right: -25px;
     top: 700px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud6 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     left: -25px;
-    top: 1000px;
+    top: 900px;
+    -webkit-animation-name: cloud-ani2;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud7 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     right: -25px;
-    top: 1200px;
+    top: 1100px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
 .cloud8 {
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 180px;
+    width: 120px;
     left: -25px;
-    top: 1400px;
+    top: 1300px;
+    -webkit-animation-name: cloud-ani2;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
 }
+.cloud9 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 120px;
+    right: -25px;
+    top: 1500px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+}
+
 
 
 /* logo section */
 .logo_section {
 }
 .logo_glover {
-    margin: 30px;
+    margin: 30px -10px 30px 30px;
     z-index: 10;
 }
 .handshake {
     margin-top: 80px;
 }
 .logo_likelion {
-    margin: 30px;
+    margin: 30px 30px 30px -10px;
     width: 119px;
     z-index: 10;
 
@@ -385,4 +453,12 @@
 }
 .m_role {
     font-size: 13px;
+}
+.hill {
+    padding-top: 70px;
+}
+.hill img {
+    width: 415px;
+    height: auto;
+    opacity: 0.75;
 }
