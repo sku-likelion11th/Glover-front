@@ -18,17 +18,43 @@ form.addEventListener("submit", function(event) {
 
 });
 
-// 모달창 내부 버튼 이벤트 핸들러 등록
+// 첫 번째 모달창 닫기 버튼 
 var closeBtn = document.querySelector(".close");
 closeBtn.addEventListener("click", function() {
+
     modal.style.display = "none"; // 모달 닫기
 });
 
-var secModal = document.querySelector(".second_modal"); // 두 번째 모달 창 
-var agreeBtn = document.querySelector(".agree");
 
-agreeBtn.addEventListener("click", function(){    // 모달 창에서 '동의'를 눌렀을 경우 다음 모달창 생성
-    secModal.style.display="block";
+// 첫 번째 모달창에서 두 번째 모달창으로 넘어가는 코드
+var agreeButton = document.getElementById("agree_Btn");
+var secondModal = document.getElementById("sec_modal");
+var closeButton = document.getElementById("closeButton");
+
+agreeButton.addEventListener("click", function() {
+
+
+    // 첫 번째 모달에 블러 효과를 추가하기 위해 클래스를 추가
+    modal.classList.add("blur-effect");
+
+    // 두 번째 모달을 표시
+    secondModal.style.display = "block";
+
+    // 두 번째 모달에 포커스를 주어 해당 모달에만 집중할 수 있도록 함
+    secondModal.focus();
+});
+
+closeButton.addEventListener("click", function() {
+    // 두 번째 모달을 숨김
+    secondModal.style.display = "none";
+    // 블러 효과를 제거하기 위해 클래스를 제거
+    modal.classList.remove("blur-effect");
+
+    // 첫 번째 모달을 다시 표시
+    document.getElementById("modal").style.display = "block";
+
+    // 첫 번째 모달에 포커스를 주어 해당 모달에만 집중할 수 있도록 함
+    document.getElementById("modal").focus();
 });
 
 // 두 번째 모달창 코드
