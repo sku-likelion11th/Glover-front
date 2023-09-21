@@ -36,10 +36,10 @@
     overflow-x: hidden;
 
     /* 배경 이미지, 클로버 필요 없으면 첫 번째의 url과 position 값 지워주면 됨 */ 
-    background-size: auto;
+    /* background-size: auto;
     background-image:url('../../img/clover.png'), url('../../img/cloud.png'), url('../../img/cloud.png'), url('../../img/cloud.png');
     background-position: 27px 56px, 270px 170px, -47px 403px, 250PX 557px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /* nav section */
@@ -190,7 +190,81 @@
     color:#5876B0;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
 }
+/* background img */
+.background_img {
+    position: relative;
+}
+/* 구름 애니메이션 넣기 */
+@-webkit-keyframes cloud-ani {
+    0% {
+        -webkit-transform: translateX(100px) translateY(0px);
+    }
 
+    100% {
+        -webkit-transform: translateX(-500px) translateY(0px);
+    }
+}
+@-webkit-keyframes cloud-ani2 {
+    100% {
+        -webkit-transform: translateX(-100px) translateY(0px);
+    }
+
+    0% {
+        -webkit-transform: translateX(700px) translateY(0px);
+    }
+}
+.cloud1 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 120px;
+    right: -25px;
+    margin-top: -50px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+}
+.cloud2 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 120px;
+    left: -25px;
+    top: 100px;
+    -webkit-animation-name: cloud-ani2;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+}
+.cloud3 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 120px;
+    right: -25px;
+    top: 280px;
+    -webkit-animation-name: cloud-ani;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+}
+.cloud4 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 120px;
+    left: -25px;
+    top: 500px;
+    -webkit-animation-name: cloud-ani2;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+}
 /* durumari section */
 .durumari{
     display:block;
