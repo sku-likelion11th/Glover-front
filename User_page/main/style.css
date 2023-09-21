@@ -152,19 +152,19 @@ select option{
 /* modal section */
 .modal {
     display: none; 
-
+    z-index: 1 !important;
 }
 
 /* 모달 콘텐츠 스타일 */
-.modal-content {
+.modal_content {
     width: 339px !important;
     height: 744px; /* 모달 창의 높이 설정 */
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-top:40px;
     border-radius: 43px !important;
     border:2px solid #5876B0;
+    background-color:#fff;
 }
 .agree_header{
     text-align: center;
@@ -177,7 +177,7 @@ select option{
     font-weight: bold;
     padding-top:10px;
     padding-bottom:5px;
-    border:2px solid #5876B0;
+    border-bottom:2px solid #5876B0;
 }
 .agree_content{
     padding-left:34px;
@@ -223,8 +223,9 @@ select option{
     color:#2A4884;
     font-weight:bold;
 }
-
-/* 모달 버튼 스타일 */
+.button{
+    text-align: center;
+}
 .agree button{
     width:82px;
     height: 34px;
@@ -243,13 +244,41 @@ select option{
     color:#91AEE6;
 }
 .modal_footer{
+    text-align: center;
     margin-top:10px;
     font-size:15px;
     color:#758DBB;
 }
 
 /* second modal */
-.second_modal{
+.sec_modal{
     display:none;
-    backdrop-filter: blur(10px);
+    position: fixed; /* 또는 position: absolute; */
+    top: 50%; /* 화면 세로 중앙에 위치 */
+    left: 50%; /* 화면 가로 중앙에 위치 */
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    z-index: 2; /* 첫 번째 모달보다 위에 표시 */
+}
+.sec_modal_content{
+    width: 286px !important;
+    height: 197px; /* 모달 창의 높이 설정 */
+    border-radius: 25px !important;
+    border:2px solid #5876B0;
+    background-color: #fff;
+    text-align: center;
+}
+.sec_header{
+    width:100%;
+    background-color: #DCECFF;
+    border-bottom:2px solid #758DBB;
+    font-size:18px;
+    font-weight: bold;
+    color:#2A4884;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/* 블러 효과 설정, js에서 값을 넣어줌 */
+.blur-effect {
+    filter: blur(5px); 
 }
