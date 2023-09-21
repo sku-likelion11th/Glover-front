@@ -43,7 +43,7 @@
     margin-left: auto;
     margin-right: auto;
     min-height: 100vh;
-    z-index: -1;
+    z-index: -10;
     background-color: #b2ccff;
     overflow-x: hidden;
 }
@@ -196,14 +196,15 @@
     margin-top:-20px;
 }
 
+/* 여기 주석처리해서 비교 */
 /* background img */
 .background_img {
     position: relative;
 }
 .clover{
     position: absolute;
-    margin-top: -200px;
-    margin-left: 10px;
+    margin-top: -130px;
+    margin-left: 20px;
 }
 .cloud1 {
     z-index: 0;
@@ -227,20 +228,75 @@
     position: absolute;
     width: 180px;
     right: -25px;
-    top: 300px;
+    top: 280px;
+}
+.cloud4 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    left: -25px;
+    top: 500px;
+}
+.cloud5 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    right: -25px;
+    top: 700px;
+}
+.cloud6 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    left: -25px;
+    top: 1100px;
+}
+.cloud7 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    right: -25px;
+    top: 1300px;
+}
+.cloud8 {
+    z-index: 0;
+    height: auto;
+    position: absolute;
+    width: 180px;
+    left: -25px;
+    top: 1500px;
 }
 
 
 /* logo section */
+.logo_section {
+}
 .logo_glover {
     margin: 30px;
+    z-index: 10;
+}
+.handshake {
+    margin-top: 80px;
 }
 .logo_likelion {
     margin: 30px;
+    width: 119px;
+    z-index: 10;
+
 }
 .logo_header{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
+}
+.logo_header p {
+    margin-bottom: 0;
+}
+.logo_header .color {
+    color: #2A4884;
 }
 .glover_icon img {
     width: 80px;
@@ -250,8 +306,82 @@
 .likelion_icon img {
     width: 80px;
     height: auto;
+    margin-bottom: 9px;
+}
+.who_made {
+    margin-bottom: 50px;
 }
 .who_made p{
-    font-size: 12px;
+    font-size: 11px;
     z-index: 100;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.info .color {
+    /* 색상변경  */
+    color: #2A4884;
+}
+
+
+/* makers section */
+.makers {
+    margin-bottom: 100px;
+}
+.glover-section {
+    flex-wrap: wrap;
+}
+.likelion-section {
+    flex-wrap: wrap;
+}
+.team {
+    margin: 70px 0 20px 0;
+}
+.makers_logo img {
+    width: 4rem;
+    margin-bottom: 10px;
+}
+.team p {
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 0px;
+}
+.team .color {
+    color: #2A4884;
+}
+.box_tool{
+    z-index: 10;
+}
+.m_box {
+    background-color: #fff;
+    border: 1px solid #2A4884;
+    border-radius: 20px;
+    height: 170px;
+    width: 120px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.m_mimo img {
+    padding-top: 10px;
+    width: 80px;
+}
+.m_icon img {
+    width: 15px;
+    border-radius: 5px;
+    margin: 6px 2px 0 0;
+}
+.m_icon2 img {
+    width: 15px;
+    border-radius: 5px;
+    margin: 8px 2px 0 0;
+}
+.m_name {
+    padding-top: 4px;
+    font-size: 14px;
+}
+.m_role {
+    font-size: 13px;
 }
