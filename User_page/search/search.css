@@ -225,6 +225,7 @@
     position:absolute;
     margin-left:240px;
     top:160px;
+    width:180px;
     -webkit-animation-name: cloud-ani;
     -webkit-animation-duration: 15s;
     -webkit-animation-timing-function: linear;
@@ -236,6 +237,7 @@
     position:absolute;
     margin-top:240px;
     margin-left:-50px;
+    width:180px;
     -webkit-animation-name: cloud-ani;
     -webkit-animation-duration: 15s;
     -webkit-animation-timing-function: linear;
@@ -247,6 +249,7 @@
     position:absolute;
     margin-top:480px;
     margin-left:240px;
+    width:180px;
     -webkit-animation-name: cloud-ani;
     -webkit-animation-duration: 15s;
     -webkit-animation-timing-function: linear;
