@@ -6,6 +6,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
     font-family: 'OKGUNG';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKGUNG.woff2') format('woff2');
     font-weight: normal;
@@ -17,14 +23,11 @@
     font-weight: 700;
     font-style: normal;
 }
-@font-face {
-    font-family: 'SF_HailSnow';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 .header-font {
     font-family: 'yg-jalnan', sans-serif;
+}
+.jamsil-font{
+    font-family: 'TheJanmsil5Bold', sans-serif;
 }
 .okman-font {
     font-family: 'OKGUNG', sans-serif;
@@ -32,9 +35,7 @@
 .shilla-font{
     font-family: 'Shilla_CultureB-Bold', sans-serif;
 }
-.snowFont {
-    font-family: 'SF_HailSnow';
-}
+
 
 
 /* display-container */
@@ -131,31 +132,59 @@
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
 }
+
+/* hamburger menu section */
 .navbar .menu-items {
-    padding-top: 108px;
-    height: auto;
-    width: 100%; /* 이거 수정해야 함 */
+    margin-top: 40px;
+    width: auto;
+    height: 650px;
     transform: translate(150%);
     display: flex;
     flex-direction: column;
-    margin-left: -30px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    text-align: center;
-    z-index: 100;
+    z-index: 100;   
 }
-.navbar .menu_durumari {
-    background-image: url(../../img/durumari.png);
-    transform: rotate(90deg);
-    background-size: 600px 300px;
+.menu_durumari {
+    width: 395px;
+    height: 800px;
+    background-image: url(../../img/durumari2.png);
+    background-size: 395px 650px;
+    z-index: 1000;
+    letter-spacing: normal;
 }
-.navbar .menu-items p{
-    font-family: 'Shilla_CultureB-Bold', sans-serif;
+.menu-items .menu_logo{
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.menu-items .menu_logo img {
+    width: 65px;
+    height: auto;
+    border-radius: 20px;
+}
+.menu_durumari .jamsil {
+    font-family: 'TheJanmsil5Bold', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: #758DBB;
+    font-size: 13px;
+}
+.menu_line {
+    border: 2px solid #758DBB;
+    width: 170px;
+    margin: 10px 114px;
+}
+.shilla {
+    font-family: 'OKGUNG', sans-serif;
     margin-bottom: 1.2rem;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 500;
-    transform: rotate(-90deg);
+    color: rgba(0, 0, 0, 0.9);
 }
+
+.menu_footer svg {
+    margin: 3px 2px;
+}
+
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
@@ -204,7 +233,7 @@
 /* 구름 애니메이션 넣기 */
 @-webkit-keyframes cloud-ani {
     0% {
-        -webkit-transform: translateX(100px) translateY(0px);
+        -webkit-transform: translateX(170px) translateY(0px);
     }
 
     100% {
@@ -213,7 +242,7 @@
 }
 @-webkit-keyframes cloud-ani2 {
     100% {
-        -webkit-transform: translateX(-100px) translateY(0px);
+        -webkit-transform: translateX(-170px) translateY(0px);
     }
 
     0% {
@@ -224,7 +253,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     right: -25px;
     margin-top: -50px;
     -webkit-animation-name: cloud-ani;
@@ -237,7 +266,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     left: -25px;
     top: 100px;
     -webkit-animation-name: cloud-ani2;
@@ -250,7 +279,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     right: -25px;
     top: 280px;
     -webkit-animation-name: cloud-ani;
@@ -263,7 +292,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     left: -25px;
     top: 500px;
     -webkit-animation-name: cloud-ani2;
@@ -276,7 +305,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     right: -25px;
     top: 700px;
     -webkit-animation-name: cloud-ani;
@@ -289,7 +318,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     left: -25px;
     top: 900px;
     -webkit-animation-name: cloud-ani2;
@@ -302,7 +331,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     right: -25px;
     top: 1100px;
     -webkit-animation-name: cloud-ani;
@@ -315,7 +344,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     left: -25px;
     top: 1300px;
     -webkit-animation-name: cloud-ani2;
@@ -328,7 +357,7 @@
     z-index: 0;
     height: auto;
     position: absolute;
-    width: 120px;
+    width: 180px;
     right: -25px;
     top: 1500px;
     -webkit-animation-name: cloud-ani;
@@ -381,7 +410,7 @@
 }
 .who_made p{
     font-size: 11px;
-    z-index: 100;
+    z-index: 10;
     font-weight: 500;
     margin-bottom: 0px;
     font-weight: 700;
@@ -426,12 +455,12 @@
     border: 1px solid #2A4884;
     border-radius: 20px;
     height: 170px;
-    width: 120px;
+    width: 130px;
     font-size: 10px;
-    font-weight: 700;
     text-align: center;
     flex-wrap: wrap;
     margin: 10px;
+    font-weight: 900;
 }
 .m_mimo img {
     padding-top: 10px;
