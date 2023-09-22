@@ -254,7 +254,7 @@
     right: -25px;
     top: 280px;
     -webkit-animation-name: cloud-ani;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 16.5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
@@ -267,7 +267,7 @@
     left: -25px;
     top: 500px;
     -webkit-animation-name: cloud-ani2;
-    -webkit-animation-duration: 18s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
@@ -280,7 +280,7 @@
     right: -25px;
     top: 700px;
     -webkit-animation-name: cloud-ani;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 18s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
@@ -293,7 +293,7 @@
     left: -25px;
     top: 900px;
     -webkit-animation-name: cloud-ani2;
-    -webkit-animation-duration: 18s;
+    -webkit-animation-duration: 15s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
@@ -306,7 +306,7 @@
     right: -25px;
     top: 1100px;
     -webkit-animation-name: cloud-ani;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 16s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
@@ -332,7 +332,7 @@
     right: -25px;
     top: 1500px;
     -webkit-animation-name: cloud-ani;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
