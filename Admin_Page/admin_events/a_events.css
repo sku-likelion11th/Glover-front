@@ -16,6 +16,12 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 .header-font {
     font-family: 'yg-jalnan', sans-serif;
 }
@@ -25,14 +31,22 @@
 .shilla-font{
     font-family: 'Shilla_CultureB-Bold', sans-serif;
 }
+.jamsil-font{
+    font-family:'TheJamsil5Bold', sans-serif;
+}
 .display-container {
     box-shadow: 0 0 15px 0 hsla(0, 0%, 100%, .75);
     max-width: 415px;   
     margin-left: auto;
     margin-right: auto;
     min-height: 100vh;
-    padding-top: 100px;
+
     z-index: 0;
     background-color: #b2ccff;
     overflow-x: hidden;
+
+    background-size: auto;
+    background-image:url('../../img/clover.png');
+    background-position: 27px 56px;
+    background-repeat: no-repeat;
 }
