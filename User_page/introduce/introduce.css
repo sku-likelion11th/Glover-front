@@ -37,9 +37,6 @@
 .shilla-font{
     font-family: 'Shilla_CultureB-Bold', sans-serif;
 }
-.jamsil-font{
-    font-family: 'TheJanmsil5Bold', sans-serif;
-}
 .tmoney-font{
     font-family: 'TmoneyRoundWindExtraBold', sans-serif;
 }
@@ -170,9 +167,7 @@
     height: auto;
     border-radius: 20px;
 }
-.menu_durumari .jamsil {
-    font-family: 'TheJanmsil5Bold', sans-serif;
-    font-weight: 900;
+.menu_durumari .tmoney {
     margin-bottom: 0;
     color: #758DBB;
     font-size: 13px;
