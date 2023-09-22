@@ -170,9 +170,7 @@
     height: auto;
     border-radius: 20px;
 }
-.menu_durumari .jamsil {
-    font-family: 'TheJanmsil5Bold', sans-serif;
-    font-weight: 900;
+.menu_durumari .tmoney {
     margin-bottom: 0;
     color: #758DBB;
     font-size: 13px;
@@ -386,7 +384,7 @@
     z-index: 10;
 }
 .handshake {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .logo_likelion {
     margin: 30px 30px 30px -10px;
@@ -443,9 +441,13 @@
 .team {
     margin: 70px 0 20px 0;
 }
+.makers_logo {
+    z-index: 10;
+}
 .makers_logo img {
     width: 4rem;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 .team p {
     font-weight: 700;
