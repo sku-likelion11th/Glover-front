@@ -138,7 +138,6 @@
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
 }
-
 /*modal section*/
 #modal.modal-bg {
 	background: rgba(0,0,0,0);
@@ -152,6 +151,7 @@
     width:310px;
     height:500px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     background-color: white;
     z-index: 10;
@@ -164,7 +164,10 @@
     transform: translateY(0);
     opacity: 1;
     transition: all 0.3s;
+
+    align-items: center;
 }
+
 .bi-x{
     position:absolute;
     border: 0;
@@ -180,13 +183,13 @@
     margin-right:200px;
 }
 .bar{
-    position:absolute;
+
     width: 250px;
     height: 2px;
     margin-top:50px;
 }
 .detail{
-    position:absolute;
+
     margin-top: 60px;
     background-color: #e7eeff;
     width: 250px;
@@ -199,7 +202,7 @@
     color:#758DBB
 }
 .bar2{
-    position:absolute;
+
     width: 250px;
     height: 2px;
     margin-top:220px;
@@ -210,54 +213,7 @@
     color:#758DBB;
     margin-right:210px;
 }
-.bi-calendar-week1{
-    position:absolute;
-    margin-top:260px;
-    margin-right:220px;
-    color:#758DBB;
-}
-.start{
-    position:absolute;
-    margin-top:260px;
-    margin-right:115px;
-    background-color: #e7eeff;
-    width: 80px;
-    height: 25px;
-    border-radius: 10px;
-}
-.start p{
-    font-size: small;
-    margin-left:10px;
-    margin-top:1px;
-    color: #758DBB;
-}
-.side{
-    position:absolute;
-    margin-top: 260px;
-    margin-right: 4px;
-    color: #758DBB;
-}
-.finish{
-    position:absolute;
-    margin-top:260px;
-    margin-left:165px;
-    background-color: #e7eeff;
-    width: 80px;
-    height: 25px;
-    border-radius: 10px;
-}
-.finish p{
-    font-size: small;
-    margin-left:10px;
-    margin-top:1px;
-    color: #758DBB;
-}
-.bi-calendar-week2{
-    position:absolute;
-    margin-top:260px;
-    margin-left:55px;
-    color:#758DBB;
-}
+
 
 @keyframes fadeIn {
 	0% {background: rgba(0,0,0,0)}
