@@ -153,11 +153,10 @@
 }
 .modal-cont{
     width:310px;
-    height:500px;
+    height:550px;
     display:flex;
     flex-direction:column;
     background-color: white;
-    margin-top:55px;
     border-radius: 30px;
     border: 4px solid;
     border-color:#91AEE6;
@@ -193,40 +192,122 @@
     margin-top:-5px;
 }
 
-
-.bar2{
-
-    width: 250px;
-    height: 2px;
-
-}
-
-.before{
-    width:98px;
-    height:98px;
-    border:2px solid #91AEE6;
-}
-
-/* .detail{
+/* form section */
+/* from section > textarea */
+.detail{
     margin-top: 10px;
     background-color: #e7eeff;
     width: 250px;
     height: 150px;
     border-radius: 20px;
+    border:none;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    resize: none;
+    outline:none;
 }
-.detail p{
-    margin-top:15px;
-    margin-left:15px;
-    color:#758DBB
-} */
-
-/* .term{
-
-    margin-top:230px;
+.term{
     color:#758DBB;
-    margin-right:210px;
-} */
+    margin-bottom:5px;
+}
+/* form section > date */
+.date{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    color:#91AEE6;
+}
+input[type="date"] {
+    width:100px;
+    height:30px;
+    font-size:12px;
+    color:#91AEE6;
+    background-color: #E5EFFE;
+    border:none;
+    border-radius: 22px;
+    text-align: center;
+    outline:none;
+}
+.bar2{
+    width: 260px;
+    height: 2px;
+}
 
+/* form section > file */
+.img{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.file-box{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    color:#758DBB;
+    font-size:14px;
+}
+/* 파일 업로드 기존 디자인 없애기 */
+.file-box input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+.file-box p{
+    margin-bottom:5px;
+}
+/* 파일(이미지) 미리보기 박스 */
+.img-box{
+    width:98px;
+    height:98px;
+    border:2px solid #91AEE6;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* form > button */
+.button{
+    text-align: center;
+    margin-top:20px;
+}
+.submit{
+    width:82px;
+    height: 34px;
+    border:1px solid #91AEE6;
+    border-radius: 5px;
+    background-color: #91AEE6;
+    color:#ffffff;
+    margin-right:40px;
+}
+.del{
+    width:82px;
+    height:34px;
+    border:2px solid #91AEE6;
+    border-radius: 5px;
+    background-color:#ffffff;
+    color:#91AEE6;
+}
+
+/* footer section */
+.footer-section {
+    margin-top: 20px;
+}
+.footer-section p{
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    color: rgba(97, 97, 97, 0.5);
+}
+.footer-section svg {
+    z-index: 2;
+    color: rgba(97,97, 97, 0.5);
+    margin: 3px 2px;
+}
 
 @keyframes fadeIn {
 	0% {background: rgba(0,0,0,0)}
