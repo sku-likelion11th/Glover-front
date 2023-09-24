@@ -139,6 +139,10 @@
     -webkit-animation-iteration-count: infinite;
 }
 /*modal section*/
+#modal{
+    z-index:4 !important;
+    position:relative;
+}
 #modal.modal-bg {
 	background: rgba(0,0,0,0);
 	animation: fadeIn 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
@@ -151,13 +155,9 @@
     width:310px;
     height:500px;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
     background-color: white;
-    z-index: 10;
-    margin-left:52px;
     margin-top:55px;
-    position:absolute;
     border-radius: 30px;
     border: 4px solid;
     border-color:#91AEE6;
@@ -165,32 +165,50 @@
     opacity: 1;
     transition: all 0.3s;
 
-    align-items: center;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
 }
-
+.modal-head{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .bi-x{
-    position:absolute;
     border: 0;
     background-color: transparent;
     height: 10px;
     z-index:10;
-    margin-left:230px;
-    margin-top:18px;
+
 }
 .name{
     color:#758DBB;
-    margin-top:25px;
-    margin-right:200px;
+    margin-top:3px;
 }
 .bar{
+    width: 260px;
+    height: 2px;
+    margin-top:-5px;
+}
+
+
+.bar2{
 
     width: 250px;
     height: 2px;
-    margin-top:50px;
-}
-.detail{
 
-    margin-top: 60px;
+}
+
+.before{
+    width:98px;
+    height:98px;
+    border:2px solid #91AEE6;
+}
+
+/* .detail{
+    margin-top: 10px;
     background-color: #e7eeff;
     width: 250px;
     height: 150px;
@@ -200,19 +218,14 @@
     margin-top:15px;
     margin-left:15px;
     color:#758DBB
-}
-.bar2{
+} */
 
-    width: 250px;
-    height: 2px;
-    margin-top:220px;
-}
-.term{
-    position:absolute;
+/* .term{
+
     margin-top:230px;
     color:#758DBB;
     margin-right:210px;
-}
+} */
 
 
 @keyframes fadeIn {
