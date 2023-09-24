@@ -44,7 +44,7 @@
     background-color: #b2ccff;
     overflow-x: hidden;
 }
-/*navbar-section*/
+/* nav section */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .nav-container {
@@ -126,31 +126,57 @@
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
 }
+
+/* hamburger menu section */
 .navbar .menu-items {
-    padding-top: 108px;
-    height: auto;
-    width: 100%; /* 이거 수정해야 함 */
+    margin-top: 40px;
+    width: auto;
+    height: 650px;
     transform: translate(150%);
     display: flex;
     flex-direction: column;
-    margin-left: -30px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    text-align: center;
-    z-index: 100;
+    z-index: 100;   
 }
-.navbar .menu_durumari {
-    background-image: url(../../img/durumari.png);
-    transform: rotate(90deg);
-    background-size: 600px 300px;
+.menu_durumari {
+    width: 395px;
+    height: 800px;
+    background-image: url(../../img/durumari2.png);
+    background-size: 395px 650px;
+    z-index: 1000;
+    letter-spacing: normal;
 }
-.navbar .menu-items p{
-    font-family: 'Shilla_CultureB-Bold', sans-serif;
+.menu-items .menu_logo{
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.menu-items .menu_logo img {
+    width: 65px;
+    height: auto;
+    border-radius: 20px;
+}
+.menu_durumari .tmoney {
+    margin-bottom: 0;
+    color: #758DBB;
+    font-size: 13px;
+}
+.menu_line {
+    border: 2px solid #758DBB;
+    width: 170px;
+    margin: 10px 114px;
+}
+.shilla {
+    font-family: 'OKGUNG', sans-serif;
     margin-bottom: 1.2rem;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 500;
-    transform: rotate(-90deg);
+    color: rgba(0, 0, 0, 0.9);
 }
+
+.menu_footer svg {
+    margin: 3px 2px;
+}
+
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
@@ -189,7 +215,6 @@
 .header-title{
     font-size: 45px;
     color: white;
-    padding-bottom: 9px;
     -webkit-text-stroke: 1px black;
 }
 .header-subtitle1{
@@ -203,6 +228,7 @@
     font-weight: lighter;
     color:#91AEE6;
     -webkit-text-stroke:1px black;
+    margin-top:-5px;
 }
 .clover-img{
     z-index: -1;
@@ -284,23 +310,67 @@
     border: 6px solid;
     border-color:#91AEE6;
     box-shadow: inset 5px 5px #bac9e6;
+    overflow-y: scroll;
+}
+/* 스크롤바 트랙 위쪽 여백 공간 주기 위해서 */
+.stamp-pan::-webkit-scrollbar-button:vertical:start:decrement,
+.stamp-pan::-webkit-scrollbar-button:vertical:start:increment {
+    display: block;
+    height: 25px;
+}
+/* 만일 스크롤바 트랙 아래쪽도 여백 공간을 주고 싶다면 ... */
+.stamp-pan::-webkit-scrollbar-button:vertical:end:decrement {
+    display: block;
+    width: 25px;
+}
+.stamp-pan::-webkit-scrollbar{
+    width: 12px;
+}  
+.stamp-pan::-webkit-scrollbar-thumb {
+    background-color: #91AEE6;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+.stamp-pan::-webkit-scrollbar-track {
+    background-color: rgba(78, 78, 78, 0);
 }
 .stamp-name{
     color:#758DBB;
     margin-top:20px;
-    margin-left: 160px;
-    text-decoration: underline;
-    text-underline-position:under;
-    text-decoration-thickness: 3px;
-    text-decoration-color:#B2CCFF;
+    margin-bottom:20px;
+    background-color:white;
+    width: 80%;
+    margin-left: 32px;
+    border-radius: 30px;
 }
-.stampset{
-    text-align: center;
-    margin-top: 20px;
-    position:absolute;
-    margin-left:10px;
+.s-number{
+    margin-right:60px;
+}
+.stamp2-set{
+    margin-top:500px;
 }
 .stamp1{
+    border: 0;
+    background-color: transparent;
+}
+.stamp2{
+    border: 0;
+    background-color: transparent;
+}
+.stamp3{
+    border: 0;
+    background-color: transparent;
+}
+.stamp4{
+    border: 0;
+    background-color: transparent;
+}
+.stamp5{
+    border: 0;
+    background-color: transparent;
+}
+.stamp6{
     border: 0;
     background-color: transparent;
 }
@@ -308,27 +378,33 @@
     width: 90px;
     height: 90px;
 }
-.stamp2{
-    border: 0;
-    background-color: transparent;
-}
 .stamp2 img{
     width: 90px;
     height: 90px;
-}
-.stamp3{
-    border: 0;
-    background-color: transparent;
 }
 .stamp3 img{
     width: 90px;
     height: 90px;
 }
+.stamp4 img{
+    width: 90px;
+    height: 90px;
+}
+.stamp5 img{
+    width: 90px;
+    height: 90px;
+}
+.stamp6 img{
+    width: 90px;
+    height: 90px;
+}
+
 /*modal section*/
-#modal.modal-bg {
-	background: rgba(0,0,0,0);
+.modal-bg {
+	background: rgba(0,0,0,0.8);
 	animation: fadeIn 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
 }
+
 .modal-bg .modal-cont {
 	opacity: 0;
 	animation: scaleUp 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
@@ -339,7 +415,7 @@
     display:flex;
     justify-content: center;
     background-color: white;
-    z-index: 10;
+    z-index: 100;
     margin-left:52px;
     margin-top:55px;
     position:absolute;
@@ -470,7 +546,7 @@
 }
 /* footer section */
 .footer-section {
-    margin-top: 550px;
+    margin-top: 540px;
 }
 .footer-section p{
     z-index: 10;
