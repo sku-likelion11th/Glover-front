@@ -235,17 +235,14 @@ input[type="date"] {
 }
 
 /* form section > file */
-.img{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-}
 .file-box{
     display:flex;
     flex-direction:column;
     text-align: center;
     color:#758DBB;
     font-size:14px;
+    padding-top:10px;
+    padding-left:20px;
 }
 /* 파일 업로드 기존 디자인 없애기 */
 .file-box input[type="file"] {
