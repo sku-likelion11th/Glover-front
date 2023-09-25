@@ -308,18 +308,45 @@
     -webkit-animation-iteration-count: infinite;
 }
 
+/* stamp add section */
+.add-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+.stamp-addBtn{
+    width: 180px;
+    height: 43px;
+    border: 1px solid #91AEE6;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
+}
+.stamp-addBtn button{
+    width: 180px;
+    height: 23px;
+    background: none;
+    border: none;
+    text-align: center;
+    margin-top: 9px;
+    color: #91AEE6;
+}
+
 /*stamp-section*/
 .stamp-section{
     position: absolute;
     text-align: center;
-    margin-top:-10px;
+    margin-top: -10px;
     margin-left: 30px;
     z-index: 1;
 }
 .stamp-pan{
     background-color:#DFEAFF;
     width: 350px;
-    height: 530px;
+    height: 460px;
     margin-left:auto;
     margin-right:auto;
     border-radius: 30px;
@@ -327,12 +354,13 @@
     border-color:#91AEE6;
     box-shadow: inset 5px 5px #bac9e6;
     overflow-y: scroll;
+    padding: 20px 0;
 }
 /* 스크롤바 트랙 위쪽 여백 공간 주기 위해서 */
 .stamp-pan::-webkit-scrollbar-button:vertical:start:decrement,
 .stamp-pan::-webkit-scrollbar-button:vertical:start:increment {
     display: block;
-    height: 25px;
+    height: 10px;
 }
 /* 만일 스크롤바 트랙 아래쪽도 여백 공간을 주고 싶다면 ... */
 .stamp-pan::-webkit-scrollbar-button:vertical:end:decrement {
@@ -563,6 +591,7 @@
 /* footer section */
 .footer-section {
     margin-top: 540px;
+    margin-bottom: 30px;
 }
 .footer-section p{
     z-index: 10;
