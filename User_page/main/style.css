@@ -317,11 +317,11 @@
 } */
 /* durumari section */
 .durumari{
+    position:relative;
     display:block;
     margin:auto;
     margin-top:30px;
-    position:relative;
-    z-index:2;
+    z-index:1;
 }
 .explan{
     position:relative;
@@ -413,7 +413,7 @@ select option{
     height: 744px; /* 모달 창의 높이 설정 */
     margin-left: auto;
     margin-right: auto;
-    margin-top:40px;
+    margin-top:80px;
     border-radius: 43px !important;
     border:2px solid #5876B0;
     background-color:#fff;
@@ -502,35 +502,6 @@ select option{
     color:#758DBB;
 }
 
-/* second modal */
-.sec_modal{
-    display:none;
-    position: fixed; /* 또는 position: absolute; */
-    top: 50%; /* 화면 세로 중앙에 위치 */
-    left: 50%; /* 화면 가로 중앙에 위치 */
-    transform: translate(-50%, -50%); /* 중앙 정렬 */
-    z-index: 4; /* 첫 번째 모달보다 위에 표시 */
-}
-.sec_modal_content{
-    width: 286px !important;
-    height: 197px; /* 모달 창의 높이 설정 */
-    border-radius: 25px !important;
-    border:2px solid #5876B0;
-    background-color: #fff;
-    text-align: center;
-}
-.sec_header{
-    width:100%;
-    background-color: #DCECFF;
-    border-bottom:2px solid #758DBB;
-    font-size:18px;
-    font-weight: bold;
-    color:#2A4884;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    padding-top:5px;
-    padding-bottom:5px;
-}
 
 /* 블러 효과 설정, js에서 값을 넣어줌 */
 .blur-effect {

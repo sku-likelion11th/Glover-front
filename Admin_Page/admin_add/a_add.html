@@ -39,7 +39,7 @@
                     <img class="bar" src="../../img/bar.png">
                     
                     <!-- from section  -->
-                    <form>
+                    <form id="name">
                         <textarea class="detail" type="text" placeholder="설명"></textarea>
                         <br>
 
@@ -52,18 +52,10 @@
                         <img class="bar2" src="../../img/bar.png">
 
                         <!-- file upload -->
-                        <p class="term header-font">이미지</p>
-                        <div class="img">
-                            <div class="file-box">
-                                <p>참여전</p>
-                                <input type="file" onchange="readURL(this, 'preview_before');" />
-                                <img id="preview_before" class="img-box" />
-                            </div>
-                            <div class="file-box">
-                                <p>참여후</p>
-                                <input type="file" onchange="readURL(this, 'preview_after');" />
-                                <img id="preview_after" class="img-box" />
-                            </div>
+                        <p class="term header-font">스탬프 이미지</p>
+                        <div class="file-box">
+                            <input type="file" onchange="readURL(this, 'preview_after');" />
+                            <img id="preview_after" class="img-box" />
                         </div>
 
                         <!-- button -->
@@ -72,12 +64,50 @@
                             <input class="del" type="button" value="삭제">
                         </div>
                     </form>
-
-
-
                 </div>
             </div>
         </div>
+
+        <!-- second modal section -->
+        <div class="sec_modal" id="fir_modal">
+            <div class="sec_modal_content">
+                <p class="sec_header">
+                    저장하시겠습니까?
+                </p>
+
+                <div class="modal_button">
+                    <a href="#" class="yes"><button>예</button></a>
+                    <a href="#" class="no"><button>아니요</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec_modal" id="sec_modal">
+            <div class="sec_modal_content">
+                <p class="sec_header">
+                    삭제하시겠습니까?
+                </p>
+
+                <div class="modal_button">
+                    <a href="#" class="yes"><button>예</button></a>
+                    <a href="#" class="no"><button>아니요</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec_modal" id="thi_modal">
+            <div class="sec_modal_content">
+                <p class="sec_header">
+                    저장하지않고<br> 나가시겠습니까?
+                </p>
+
+                <div class="modal_button">
+                    <a href="#" class="yes"><button>예</button></a>
+                    <a href="#" class="no"><button>아니요</button></a>
+                </div>
+            </div>
+        </div>
+
         <!-- footer section -->
         <div class="footer-section jamsil-font">
             <div class="firstline d-flex justify-content-center ">
