@@ -278,7 +278,7 @@
     position: absolute;
     width: 180px;
     left: -25px;
-    top: 200px;
+    top: 120px;
     -webkit-animation-name: cloud-ani2;
     -webkit-animation-duration: 18s;
     -webkit-animation-timing-function: linear;
@@ -293,7 +293,7 @@
     right: -25px;
     top: 280px;
     -webkit-animation-name: cloud-ani;
-    -webkit-animation-duration: 16.5s;
+    -webkit-animation-duration: 17s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: infinite;
