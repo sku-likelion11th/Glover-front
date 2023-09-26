@@ -12,7 +12,7 @@ fetch('a_search.json')
             <td>${student.department}</td>
             <td>${student.sid}</td>
             <td>${student.name}</td>
-            <td><input type="checkbox" name="choose"></td>
+            <td><input type="checkbox" name="choose"${student.check}></td>
             </tr>
             `;
             $(".table").append(template)
