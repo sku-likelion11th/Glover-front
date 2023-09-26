@@ -311,6 +311,7 @@
     border-color:#91AEE6;
     box-shadow: inset 5px 5px #bac9e6;
     overflow-y: scroll;
+    padding-bottom: 10px;
 }
 /* 스크롤바 트랙 위쪽 여백 공간 주기 위해서 */
 .stamp-pan::-webkit-scrollbar-button:vertical:start:decrement,
