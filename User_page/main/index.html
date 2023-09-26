@@ -84,8 +84,9 @@
 
         <!-- login section -->
         <form class="login" id="login" method="post">
-            <select>
-                <option value="0" disabled selected>학과 </option>
+            <!-- select 요소와 아이콘을 감싸는 컨테이너 추가 -->
+            <select class="custom-select">
+                <option value="0" disabled selected>학과</option>
                 <option value="1">관광개발학과</option>
                 <option value="2">경영학과</option>
                 <option value="3">글로벌물류학부</option>
@@ -99,12 +100,12 @@
 
         <!-- first modal section  -->
         <div class="modal" id="modal">
-            <div class="modal_content jamsil-font">
+            <div class="modal_content">
                 <div class="agree_header">
                     글:Lover 사용을 위한<br>
                     개인정보 수집•이용 및 제공 동의서
                 </div>
-                <div class="agree_content">
+                <div class="agree_content jamsil-font">
                     <p class="black">
                         글로벌경영기술대학 학생회는 단과대학 소속
                         학우에게 아래와 같이 개인정보
