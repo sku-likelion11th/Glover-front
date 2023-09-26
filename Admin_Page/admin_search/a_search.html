@@ -19,7 +19,7 @@
     <div class="display-container">
         <!-- navbar section -->
         <nav>
-            <div class="navbar tmoney-font">
+            <div class="navbar jamsil-font">
                 <div class="container nav-container">
                     <div class="nav_logo">
                         <a href="../admin_main/a_main.html">
@@ -72,18 +72,15 @@
             <div class="header-title header-font">
                 이벤트 참여자 조회
             </div>
-            <div class="cloud-img1" alt="구름 이미지">
-                <img src="../../img/cloud.png">
-            </div>
-            <div class="cloud-img2" alt="구름 이미지">
-                <img src="../../img/cloud.png">
-            </div>
-            <div class="cloud-img3" alt="구름 이미지">
-                <img src="../../img/cloud.png">
+            <div class="background_img">
+                <img src="../../img/cloud.png" alt="구름2" class="cloud1">                
+                <img src="../../img/cloud.png" alt="구름2" class="cloud2">
+                <img src="../../img/cloud.png" alt="구름3" class="cloud3">
+                <!-- <img src="../../img/cloud.png" alt="구름4" class="cloud4"> -->
             </div>
         </div>
         <!--button section-->
-            <div class="button-section">
+            <div class="button-section jamsil-font">
                 <form class="a_search" id="a_search" method="post">
                     <div class="dropdown-e">
                         <select>
@@ -103,16 +100,18 @@
                     <div class="search_id">
                         <input type="text" id="a_student_id" placeholder="학번">
                     </div>
+                    <div>
                         <button class="submit_search" onclick="tableCreate()">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi-s bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                               </svg>
                             검색하기
                         </button>
+                    </div>
                 </form>
             </div>
         <!--table section-->
-        <div class="table-section">
+        <div class="table-section LotteMart-font">
             <table class="table" id="dynamicTable">
                 <thead>
                   <tr>
@@ -128,11 +127,13 @@
                   <td>신민서</td>
                   <td><input type="checkbox" name="choose"></td>-->
                 </tbody>
-              </table>
-              <div class="check">
-                <button class="check-button">확인</button>
-              </div>
+              </table>   
         </div>
+        <div class="check jamsil-font">
+            <button class="check-button" onclick="location.href='../admin_events/a_events.html'">
+                확인
+            </button>
+          </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
