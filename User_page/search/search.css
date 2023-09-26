@@ -35,7 +35,7 @@
     font-family:'TheJamsil5Bold', sans-serif;
 }
 .display-container {
-    box-shadow: 0 0 15px 0 hsla(0, 0%, 100%, .75);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     max-width: 415px;   
     margin-left: auto;
     margin-right: auto;
@@ -547,7 +547,8 @@
 }
 /* footer section */
 .footer-section {
-    margin-top: 540px;
+    margin-top: 550px;
+    margin-bottom: 20px;
 }
 .footer-section p{
     z-index: 10;
