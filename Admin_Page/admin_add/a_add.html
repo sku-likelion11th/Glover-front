@@ -62,7 +62,6 @@
             <p class="header_name">도장 추가</p>
             <p class="header_sub">글천절</p>
             <p class="header_add">: 글Lover</p>
-
             <div class="background_img">
                 <img src="../../img/cloud.png" alt="구름2" class="cloud1">                
                 <img src="../../img/cloud.png" alt="구름2" class="cloud2">
@@ -100,13 +99,46 @@
                                 <input type="file" onchange="readURL(this, 'preview_after');" />
                                 <img id="preview_after" class="img-box" />
                             </div>
-                        </div>
                         <!-- button -->
                         <div class="button">
                             <input class="submit" type="submit" value="저장">
                             <input class="del" type="button" value="삭제">
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+        <!-- second modal section -->
+        <div class="sec_modal" id="fir_modal">
+            <div class="sec_modal_content">
+                <p class="sec_header">
+                    저장하시겠습니까?
+                </p>
+                <div class="modal_button">
+                    <a href="#" class="yes"><button>예</button></a>
+                    <a href="#" class="no"><button>아니요</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sec_modal" id="sec_modal">
+            <div class="sec_modal_content">
+                <p class="sec_header">
+                    삭제하시겠습니까?
+                </p>
+                <div class="modal_button">
+                    <a href="#" class="yes"><button>예</button></a>
+                    <a href="#" class="no"><button>아니요</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="sec_modal" id="thi_modal">
+            <div class="sec_modal_content">
+                <p class="sec_header">
+                    저장하지않고<br> 나가시겠습니까?
+                </p>
+                <div class="modal_button">
+                    <a href="#" class="yes"><button>예</button></a>
+                    <a href="#" class="no"><button>아니요</button></a>
                 </div>
             </div>
         </div>
