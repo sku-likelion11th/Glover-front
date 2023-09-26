@@ -87,7 +87,7 @@ init(); */
 
 
 
-
+// 내가 고안한 두번째 모달 팝업
 /* const yes = document.getElementById('submit');
 const modal_saveBtn = document.getElementById('modal_save');
 const no = document.getElementById('no');

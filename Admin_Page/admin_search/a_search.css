@@ -335,11 +335,14 @@ select option{
     background: none;
     border:none;
     text-align: center;
+    margin-top: 5px;
+    outline: none;
 }
 .search_id input::placeholder {
     color: #758DBB;
     border-radius: 30px;
     font-size: 15px;
+    font-weight: 700;
 }
 .submit_search{
     margin-top:40px;
