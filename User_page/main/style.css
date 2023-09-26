@@ -338,26 +338,48 @@
     flex-direction:column;
     align-items:center;
 }
-select{
-    width:180px;
-    height:52px;
-    border-color:#91AEE6;
+.custom-select {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 180px;
+    height: 52px;
+    border-color: #91AEE6;
     border-radius: 30px;
     text-align: center;
-    color:#758DBB;
-    font-weight:bold;
-    box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
-    z-index:2;
-    font-size:18px;
-    outline:none;
-    
+    color: #758DBB;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    font-size: 16px;
+    outline: none;
+    padding: 0; /* 패딩 제거 */
+    background-image: url('../../img/downarrow.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* 오른쪽 여백을 10px로 조절 */
+
+    /* 추가된 스타일 */
+    display: flex;
+    justify-content: center; /* 텍스트를 수평으로 중앙 정렬 */
+    align-items: center; /* 텍스트를 수직으로 중앙 정렬 */
 }
-select:focus{
-    border-color:#2a4884;
+
+/* 텍스트 정렬을 중앙으로 조절 */
+.custom-select select {
+    width: 100%; /* select 요소가 전체 너비를 차지하도록 설정 */
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
 }
-select option{
-    font-size:16px;
-    color:#758DBB;
+
+.custom-select:focus {
+    border-color: #2a4884;
+}
+.custom-select option {
+    font-size: 16px;
+    color: #758DBB;
 }
 
 .id{

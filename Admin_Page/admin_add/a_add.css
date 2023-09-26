@@ -135,7 +135,7 @@
 
 /* hamburger menu section */
 .navbar .menu-items {
-    margin-top: 40px;
+    margin-top: 55px;
     width: auto;
     height: 650px;
     transform: translate(150%);
@@ -408,13 +408,8 @@ input[type="date"] {
 }
 
 .file-box{
-    display:flex;
-    flex-direction:column;
     text-align: center;
     color:#758DBB;
-    font-size:14px;
-    padding-top:10px;
-    padding-left:20px;
 }
 /* 파일 업로드 기존 디자인 없애기 */
 .file-box input[type="file"] {
@@ -515,6 +510,7 @@ input[type="date"] {
 /* footer section */
 .footer-section {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 .footer-section p{
     z-index: 2;
@@ -550,4 +546,9 @@ input[type="date"] {
 	0% {transform: scale(1);}
 	99.9% {transform: scale(1); }
 	100% {transform: scale(0); }
+}
+
+/* 블러 효과 */
+.blur-effect {
+    filter: blur(3px); /* 흐림 효과 크기 지정 (px 단위) */
 }
