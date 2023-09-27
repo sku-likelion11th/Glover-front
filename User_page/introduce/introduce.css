@@ -304,7 +304,7 @@
 }
 .durumari_img img {
     z-index: 10;
-    height: 380px;
+    height: 450px;
     width: 290px;
 }
 .d_write p{
@@ -314,7 +314,7 @@
     font-size: 19px;
     position: absolute;
     right: 97px;
-    margin-top: 105px;
+    margin-top: 140px;
 }
 
 
