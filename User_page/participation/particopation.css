@@ -318,9 +318,9 @@
 }
 /* 스크롤바 트랙 위쪽 여백 공간 주기 위해서 */
 .stamp_tool::-webkit-scrollbar-button:vertical:start:decrement,
-.stamp_tool:-webkit-scrollbar-button:vertical:start:increment {
+.stamp_tool::-webkit-scrollbar-button:vertical:start:increment {
     display: block;
-    height: 55px;
+    height: 25px;
 }
 /* 만일 스크롤바 트랙 아래쪽도 여백 공간을 주고 싶다면 ... */
 .stamp_tool::-webkit-scrollbar-button:vertical:end:decrement {
@@ -345,7 +345,7 @@
     border: 2px solid #91AEE6;
     border-radius: 30px;
     color: #758DBB;
-    margin: 25px 0 25px 20px;
+    margin: 25px 0 15px 20px;
 }
 .stamp {
     display: grid;
@@ -363,9 +363,118 @@
 
 
 /* modal-section */
-.modal-section {
-
+/* .modal-section .modal_cont {
+	opacity: 0;
+	animation: scaleUp 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
 }
+.hidden{
+    display:none;
+} */
+.modal-section {
+    max-width: 415px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal_cont {
+    background-color: #ffffff;
+    width: 310px;
+    height: 270px;
+    margin-left: 52px;
+    border: 4px solid #91AEE6;
+    border-radius: 30px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s;
+    color: #758DBB;
+    position: absolute;
+    margin-top: 350px;
+}
+.modal_cont p {
+    margin-bottom: 0;
+}
+.modal_name {
+    width: 260px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+.modal_name p {
+    margin-left: 15px;
+}
+.bi-x{
+    background: none;
+    border: 0;
+    height: 10px;
+    margin-top: -10px;
+    margin-right: 0px;
+}
+.modal_line {
+    width: 230px;
+    border: 2px solid #91AEE6;
+    border-radius: 5px;
+    margin-left: 35px;
+}
+.modal_detail {
+    background-color: #DFEAFF;
+    width: 225px;
+    height: 90px;
+    margin: 10px 0 10px 37px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    overflow-y: scroll; 
+}
+/* 설명이 길어질 경우를 대비해 스크롤 생성 */
+.modal_detail::-webkit-scrollbar-button:vertical:start:decrement,
+.modal_detail::-webkit-scrollbar-button:vertical:start:increment {
+    display: block;
+    height: 5px;
+}
+.modal_detail::-webkit-scrollbar-button:vertical:end:decrement {
+    display: block;
+    width: 2px;
+}
+.modal_detail::-webkit-scrollbar{
+    width: 10px;
+}  
+.modal_detail::-webkit-scrollbar-thumb {
+    background-color: #91AEE6;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+.modal_detail::-webkit-scrollbar-track {
+    background-color: rgba(78, 78, 78, 0);
+}
+.modal_term {
+    margin: 10px 0 5px 35px;
+}
+.modal_date {
+    font-size: 14px;
+    margin-left: 4px;
+}
+.modal_svg {
+    margin-top: 4px;
+}
+.modal_start {
+    background-color: #DFEAFF;
+    padding: 4px 7px 0 7px;
+    margin: 0 4px;
+    border-radius: 10px;
+}
+.modal_wave {
+    font-size: 20px;
+}
+.modal_finish {
+    background-color: #DFEAFF;
+    padding: 4px 7px 0 7px;
+    margin: 0 4px;
+    border-radius: 10px;
+}
+
 
 /* footer section */
 .footer-section {
