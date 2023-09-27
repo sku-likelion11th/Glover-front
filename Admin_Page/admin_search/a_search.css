@@ -203,13 +203,6 @@
 }
 
 /*header-section*/
-.header-section {
-    position:relative;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top:50px;
-    z-index:1;
-}
 .header-circle{
     background-color: rgba(255, 255, 255, 0.301);
     width:100px;
@@ -219,8 +212,15 @@
     margin-left: 160px;
     border-radius: 100px;
     box-shadow: 0px 0px 50px 30px rgba(255, 255, 255, 0.341);
-
 }
+.header-section {
+    position:relative;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top:50px;
+    z-index:1;
+}
+
 .header-title{
     font-size: 40px;
     color: white;
