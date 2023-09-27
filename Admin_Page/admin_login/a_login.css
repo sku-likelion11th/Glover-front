@@ -272,7 +272,7 @@
 }
 .clover {
     position: absolute;
-    margin-top: -200px;
+    margin-top: -180px;
     left: 10px;
     z-index: -1;
 }
