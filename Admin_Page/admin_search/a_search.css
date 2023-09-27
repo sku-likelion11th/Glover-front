@@ -326,18 +326,23 @@ select option{
     font-size:15px;
     color:#758DBB;
 }
+.first-button{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 .dropdown-e{
-    position:absolute;
     margin-left:30px;
     font-size:15px;
 }
 .dropdown-d{
-    position:absolute;
-    margin-left:210px;
     font-size:15px;
 }
+.second-button{
+    display: grid;
+    grid-template-columns: 0 1fr;
+}
 .search_id{
-    margin-top:40px;
+    margin-top:15px;
     margin-left:30px;
     width:170px;
     height:30px;
@@ -347,7 +352,6 @@ select option{
     text-align:center;
     box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.2);
     z-index:2;
-    position:absolute;
 }
 .search_id input{
     width:130px;
@@ -366,8 +370,8 @@ select option{
     font-weight: 700;
 }
 .submit_search{
-    margin-top:40px;
-    margin-left:210px;
+    margin-top:15px;
+    margin-left:200px;
     border:1px solid #91AEE6;
     border-radius: 30px;
     width:170px;
