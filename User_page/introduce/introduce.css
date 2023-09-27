@@ -92,6 +92,7 @@
     top: 13px;
     left: 15px;
     font-size: 1.2rem;
+    z-index: 2; /* 로고를 클로버 이미지 위에 표시하기 */
 }
 .nav_logo img{
     width: 45px;
