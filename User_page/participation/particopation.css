@@ -352,10 +352,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 15px;
 }
+.stampBtn {
+    background: none;
+    border: none;
+}
 .stamp img{
     width: 80px;
     height: auto;
-    margin: 10px 10px;
+    margin: 10px 0;
     /* 혹시나 배경이나 선이 있을까봐 넣어둠 */
     border: none;
     background-color: transparent;
@@ -363,14 +367,14 @@
 
 
 /* modal-section */
-/* .modal-section .modal_cont {
+.modal-section .modal_cont {
 	opacity: 0;
 	animation: scaleUp 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
 }
 .hidden{
     display:none;
-} */
-.modal-section {
+}
+/* .modal-section {
     max-width: 415px;
     min-height: 100vh;
     width: 100%;
@@ -379,7 +383,7 @@
     position: fixed;
     z-index: 20;
     background: rgba(0, 0, 0, 0.5);
-}
+} */
 .modal_cont {
     background-color: #ffffff;
     width: 310px;

@@ -1,4 +1,4 @@
-const stampButtons = document.querySelectorAll(".stamp");
+const stampButtons = document.querySelectorAll(".stampBtn");
 const modal = document.querySelector(".modal_cont");
 const modalName = document.querySelector(".modal_name p");
 const modalInfo = document.querySelector(".modal_detail p");
