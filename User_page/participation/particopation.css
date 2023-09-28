@@ -364,6 +364,7 @@
 .stampBtn {
     background: none;
     border: none;
+    cursor: pointer;
 }
 .stamp img{
     width: 80px;
@@ -491,7 +492,7 @@
 
 /* footer section */
 .footer-section {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .footer-section p{
     z-index: 10;
